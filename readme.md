@@ -1,0 +1,2 @@
+# Weather App
+Build a webpage that would ask a user to enter a city name and to output the weather temperature, description, and in image showing the current conditions using the `openweathermap.org api`.
