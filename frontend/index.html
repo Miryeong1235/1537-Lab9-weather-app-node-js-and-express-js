@@ -18,7 +18,7 @@
     <script>
         document.getElementById('submitBtn').addEventListener('click', async () => {
             const x = document.getElementById('x').value;
-            resp = await fetch(`http://localhost:3000/getCityWeather?cname=${x}`);
+            resp = await fetch(`https://lab9-weather-app.onrender.com/getCityWeather?cname=${x}`);
             respJson = await resp.json();
             document.getElementById('result').innerHTML = respJson.main.temp;
             document.getElementById('result').innerHTML += respJson.weather[0].description;
