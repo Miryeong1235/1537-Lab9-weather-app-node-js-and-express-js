@@ -20,9 +20,9 @@
             const x = document.getElementById('x').value;
             resp = await fetch(`https://lab9-weather-app.onrender.com/getCityWeather?cname=${x}`);
             respJson = await resp.json();
-            document.getElementById('result').innerHTML = respJson.main.temp;
-            document.getElementById('result').innerHTML += respJson.weather[0].description;
-            document.getElementById('result').innerHTML += `<img src="https://openweathermap.org/img/wn/${respJson.weather[0].icon}@2x.png">`;
+            document.getElementById('result').innerHTML = `<div> ${respJson.main.temp}</div>`;
+            document.getElementById('result').innerHTML += `<div> ${respJson.weather[0].description}</div>`;
+            document.getElementById('result').innerHTML += `<div> <img src="https://openweathermap.org/img/wn/${respJson.weather[0].icon}@2x.png"></div>`;
         })
 
     </script>
